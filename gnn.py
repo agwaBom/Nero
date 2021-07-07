@@ -3,6 +3,8 @@ from argparse import ArgumentParser
 from model.model import Model
 import sys
 import traceback
+import os
+os.environ["CUDA_VISIBLE_DEVICES"]="2"
 
 from os.path import realpath, dirname, join as path_join
 from shutil import copyfile
